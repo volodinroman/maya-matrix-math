@@ -1,3 +1,7 @@
+"""
+Get an object world matrix as MMatrix
+"""
+
 import maya.api.OpenMaya as OpenMaya
 
 # create a cube

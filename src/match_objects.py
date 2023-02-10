@@ -20,7 +20,7 @@ world_matrix = dag_path.inclusiveMatrix() # inclusive matrix includes object tra
 transform_matrix = om.MTransformationMatrix(world_matrix)
 
 # wrap the 2nd object with MFnTransform class
-selection_list.add("pCone1")
+selection_list.add(cone)
 dag_path_2 = selection_list.getDagPath(1)
 fn_transform = om.MFnTransform(dag_path_2)
 

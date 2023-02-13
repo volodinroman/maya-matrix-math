@@ -2,13 +2,10 @@ import maya.cmds as cmds
 import maya.api.OpenMaya as OpenMaya
 
 # lets create a cube and locator
-"""cube = cmds.polyCube()[0]
+cube = cmds.polyCube()[0]
 cmds.move(3,4,5)
 cmds.move(45, 70,35)
-locator = cmds.spaceLocator()"""
-cube = "pCone1"
-locator = "locator1"
-
+locator = cmds.spaceLocator()
 
 def construct_face_matrix(obj, face_idx):
     """

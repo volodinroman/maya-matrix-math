@@ -4,7 +4,7 @@ import maya.api.OpenMaya as OpenMaya
 # lets create a cube and locator
 cube = cmds.polyCube()[0]
 cmds.move(3,4,5)
-cmds.move(45, 70,35)
+cmds.rotate(45, 70,35)
 locator = cmds.spaceLocator()[0]
 
 def construct_face_matrix(obj, face_idx):

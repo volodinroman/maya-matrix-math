@@ -1,5 +1,8 @@
 """
 Spiral Stair, that involves rotation of an object around a custom vector in space
+
+In this example we will use a vector between 2 spheres, but we can use any other vector
+Make sure you have 2 spheres in your scene - pSphere1, pSphere2
 """
 
 

@@ -29,4 +29,6 @@ world_matrix = cmds.xform('pCube1', q=True, worldSpace=True, matrix=True)
 import maya.cmds as cmds
 import maya.api.OpenMaya as om
 world_matrix = cmds.getAttr("pCube1.worldMatrix")
-world_matrix = om.MMatrix(((*world_matrix[0:4]),(*world_matrix[4:8]),(*world_matrix[8:12]),(*world_matrix[12:16]))) # wrap it with MMatrix class
+
+ # wrap it with MMatrix class
+world_matrix = om.MMatrix(((*world_matrix[0:4]),(*world_matrix[4:8]),(*world_matrix[8:12]),(*world_matrix[12:16])))

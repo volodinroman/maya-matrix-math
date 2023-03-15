@@ -11,7 +11,7 @@ cmds.xform(cube, t=[1,2,3], ro=[10,15,32], ws=1)
 # --------------------------------- OpenMaya way 
 
 # get a dag path of the cube
-selection_list = om.MSelectionList()
+selection_list = OpenMaya.MSelectionList()
 selection_list.add(cube)
 dag_path = selection_list.getDagPath(0)
 
@@ -27,8 +27,8 @@ world_matrix = cmds.xform('pCube1', q=True, worldSpace=True, matrix=True)
 
 # --------------------------------- using a Transform node attribute "worldMatrix" 
 import maya.cmds as cmds
-import maya.api.OpenMaya as om
+import maya.api.OpenMaya as OpenMaya
 world_matrix = cmds.getAttr("pCube1.worldMatrix")
 
  # wrap it with MMatrix class
-world_matrix = om.MMatrix(((*world_matrix[0:4]),(*world_matrix[4:8]),(*world_matrix[8:12]),(*world_matrix[12:16])))
+world_matrix = OpenMaya.MMatrix(((*world_matrix[0:4]),(*world_matrix[4:8]),(*world_matrix[8:12]),(*world_matrix[12:16])))

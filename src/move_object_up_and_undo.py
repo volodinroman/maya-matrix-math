@@ -11,8 +11,8 @@ sel_list.add("pCube1")
 dagPath_Cube = sel_list.getDagPath(0) 
 cube_world_matrix = dagPath_Cube.inclusiveMatrix() # get pCube1 world matrix
 
-# let's move the cube 1 units up
-offset_matrix = OpenMaya.MMatrix() # creates empty (Identity) matrix
+# let's move the cube 3 units up
+offset_matrix = OpenMaya.MMatrix() # creates an empty (Identity) matrix
 
 """
 The MMatrix is a mathematical object that requires conversion 
